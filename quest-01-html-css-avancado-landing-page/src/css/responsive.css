@@ -1,0 +1,57 @@
+@media(max-width:975px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        background: url(../images/bg-mobile.svg) center center no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);;
+    }
+
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .logo{
+        margin-bottom: 20px;
+    }
+
+    .hero img{
+        width: 500px;
+        align-items: center;
+    }
+
+    .hero .description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero .description h2{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .hero .description p{
+        max-width: 360px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .hero .description .btn-register{
+        padding: 10px 100px;
+        font-size: 1.8rem;
+    }
+
+    .social{
+        justify-content: center;
+        margin: 40px 0;
+    }
+
+    .social a{
+        padding: 8px 13px;
+    }
+}
