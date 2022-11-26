@@ -1,0 +1,88 @@
+body {
+    height: 100vh;
+}
+
+main {
+    background-image: url(../images/bg-repeat.jpg);
+    background-size: contain;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+}
+
+.duvidas {
+    width: 350px;
+    margin-top: 150px;
+}
+
+.duvidas h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.duvidas .resposta {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #FFF;
+    margin-top: 15px;
+}
+
+.formulario {
+    margin-left: 50px;
+    width: 340px;
+    min-height: 378px;
+    background-color: #FFF;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.formulario form input {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 1px solid #000;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.formulario form input:first-child {
+    margin-top: 0;
+}
+
+.formulario form textarea {
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 5px 8px;
+    resize: none;
+}
+
+.formulario form span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.formulario .enviar {
+    background-color: #3CCC87;
+    color: #FFF;
+    border: none;
+}
+
+/* ESTILIZAÇAO DE ERROR */
+
+.formulario form input.error{
+    border: 1px solid red;
+}
