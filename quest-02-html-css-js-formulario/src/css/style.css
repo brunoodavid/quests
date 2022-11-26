@@ -75,14 +75,32 @@ main {
     margin-top: 5px;
 }
 
-.formulario .enviar {
+.formulario .btn-enviar {
     background-color: #3CCC87;
     color: #FFF;
     border: none;
 }
 
-/* ESTILIZAÇAO DE ERROR */
-
-.formulario form input.error{
-    border: 1px solid red;
+.formulario .campo-obrigatorio{
+    color: red;
+    display: none;
 }
+
+/* ESTILIZAÇAO DE CAMPO OBRIGATORIO */
+
+.formulario form input.borda-vermelha{
+    border: 2px solid red;
+}
+
+.formulario form input.borda-vermelha.campo-obrigatorio{
+    display: block;
+}
+/* ESTILIZAÇAO DE CAMPO PREENCHIDO */
+.formulario form input.campo-preenchido{
+    border: 2px solid lawngreen;
+}
+
+.formulario form input.campo-preenchido:last-child{
+    border: none;
+}
+
