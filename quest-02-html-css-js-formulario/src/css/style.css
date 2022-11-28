@@ -88,15 +88,16 @@ main {
 
 /* ESTILIZAÇAO DE CAMPO OBRIGATORIO */
 
-.formulario form input.borda-vermelha{
+.formulario form .inputs.borda-vermelha{
     border: 2px solid red;
 }
 
-.formulario form input.borda-vermelha.campo-obrigatorio{
+.formulario .campo-obrigario-com-block{
     display: block;
+    font-weight: 400;
 }
 /* ESTILIZAÇAO DE CAMPO PREENCHIDO */
-.formulario form input.campo-preenchido{
+.formulario form .inputs.campo-preenchido{
     border: 2px solid lawngreen;
 }
 
