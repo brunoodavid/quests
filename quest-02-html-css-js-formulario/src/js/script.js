@@ -1,33 +1,28 @@
-const formControl = document.querySelectorAll(".form-control")
-const inputNome = document.getElementById("nome")
-const inputEmail = document.getElementById("email")
-const inputTelefone = document.getElementById("telefone")
-const textArea = document.getElementById("mensagem")
-const btnEnviar = document.querySelector(".btn-enviar")
+const inputs = document.querySelectorAll("input")
+const textArea = document.querySelectorAll("textarea")
+const btnEnviar = document.querySelector(".btn-enviar");
+
 
 
 btnEnviar.addEventListener("click", function(){
-    if(inputNome.value === ""){
-        formControl[0].classList.add("error")
-    } else {
-        formControl[0].classList.add("success")
-    }
+    inputs.forEach(function(item){
+        if(item.value == ""){
+            item.classList.add("borda-vermelha")
+        } else {
+            item.classList.add("campo-preenchido")
+        }
+    })
 
-    if(inputEmail.value === ""){
-        formControl[1].classList.add("error")
-    } else {
-        formControl[1].classList.add("success")
-    }
+    textArea.forEach(function(item){
+        console.log(item)
+        if(item.value == ""){
+            item.classList.add("borda-vermelha")
+        } else {
+            item.classList.add("campo-preenchido")
+        }
+    })
+})
 
-    if(inputTelefone.value === ""){
-        formControl[2].classList.add("error")
-    } else {
-        formControl[2].classList.add("success")
-    }
+btnEnviar.addEventListener("click", function(){
 
-    if(textArea.value === ""){
-        formControl[3].classList.add("error")
-    } else {
-        formControl[3].classList.add("success")
-    }
 })
