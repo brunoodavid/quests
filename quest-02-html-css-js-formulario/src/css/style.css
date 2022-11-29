@@ -34,73 +34,74 @@ main {
     margin-top: 15px;
 }
 
-.formulario {
+.formulario-container {
     margin-left: 50px;
     width: 340px;
     min-height: 378px;
     background-color: #FFF;
 }
 
-.formulario form {
+.formulario{
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
 
-.formulario form input {
+.formulario .form-control{
+    margin-bottom: 10px;
+}
+
+.formulario .form-control .inputs {
     padding: 10px;
     border-radius: 5px;
     margin-top: 15px;
     border: 1px solid #000;
     font-weight: 400;
     font-size: 1.5rem;
+    width: 100%;
 }
 
-.formulario form input:first-child {
+.formulario .form-control .inputs:first-child {
     margin-top: 0;
 }
 
-.formulario form textarea {
-    margin-top: 15px;
-    border-radius: 5px;
-    font-weight: 400;
-    font-size: 1.5rem;
-    padding: 5px 8px;
+.formulario .form-control textarea{
     resize: none;
 }
 
-.formulario form span {
-    font-size: 1.5rem;
+.formulario .campos-obrigatorios {
+    font-size: 1.7rem;
     font-weight: 700;
-    margin-top: 5px;
+}
+
+.formulario .form-control span{
+    display: none;
 }
 
 .formulario .btn-enviar {
     background-color: #3CCC87;
     color: #FFF;
     border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.5rem;
 }
 
-.formulario .campo-obrigatorio{
-    color: red;
-    display: none;
+/* ESTILIZAÇÃO DE ERROR */
+.formulario .form-control.error .inputs{
+    border: 2px solid #F52E2E;
 }
 
-/* ESTILIZAÇAO DE CAMPO OBRIGATORIO */
-
-.formulario form input.borda-vermelha{
-    border: 2px solid red;
-}
-
-.formulario form input.borda-vermelha.campo-obrigatorio{
+.formulario .form-control.error span{
     display: block;
-}
-/* ESTILIZAÇAO DE CAMPO PREENCHIDO */
-.formulario form input.campo-preenchido{
-    border: 2px solid lawngreen;
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
-.formulario form input.campo-preenchido:last-child{
-    border: none;
+/* ESTILIZAÇÃO DE SUCCESS */
+.form-control.success .inputs{
+    border: 2px solid #00C22B;
 }
 
