@@ -5,8 +5,6 @@ const inputTelefone = document.getElementById("telefone")
 const textArea = document.getElementById("mensagem")
 const btnEnviar = document.querySelector(".btn-enviar")
 
-console.log(formControl)
-console.log(inputNome)
 
 btnEnviar.addEventListener("click", function(){
     if(inputNome.value === ""){
@@ -33,5 +31,3 @@ btnEnviar.addEventListener("click", function(){
         formControl[3].classList.add("success")
     }
 })
-
-
