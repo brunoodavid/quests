@@ -28,18 +28,29 @@
                 </p>
             </div>
 
-            <div class="formulario">
-                <form action="">
-                    <input type="text" name="nome" id="nome" placeholder="Nome completo *">
-                    <span class="campo-obrigatorio">campo obrigatorio*</span>
-                    <input type="email" name="email" id="email" placeholder="Email *">
-                    <span class="campo-obrigatorio">campo obrigatorio*</span>
-                    <input type="text" name="telefone" id="telefone" placeholder="Telefone *">
-                    <span class="campo-obrigatorio">campo obrigatorio*</span>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem *"></textarea>
-                    <span class="campo-obrigatorio">campo obrigatorio*</span>
-                    <span>*campos obrigatórios</span>
-                    <input type="button" name="enviar" id="enviar" class="btn-enviar" value="Enviar">
+            <div class="formulario-container">
+                <form action="" class="formulario">
+                    <div class="form-control">
+                        <input type="text" name="nome" id="nome" class="inputs" placeholder="Nome completo *">
+                        <span>campo obrigatório</span>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" id="email" class="inputs" placeholder="Email *">
+                        <span>campo obrigatório</span>
+                    </div>
+                    <div class="form-control">
+                        <input type="tel" name="telefone" id="telefone" class="inputs" placeholder="Telefone *">
+                        <span>campo obrigatório</span>
+                    </div>
+                    <div class="form-control">
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="inputs" placeholder="Mensagem *"></textarea>
+                        <span>campo obrigatório</span>
+                    </div>
+                    <span class="campos-obrigatorios">*campos obrigatórios</span>
+                    <input type="button" name="btn-enviar" id="btn-enviar" class="btn-enviar" value="Enviar">
+    
+                    
+                    
                 </form>
             </div>
         </section>
@@ -49,4 +60,3 @@
 </body>
 
 </html>
-

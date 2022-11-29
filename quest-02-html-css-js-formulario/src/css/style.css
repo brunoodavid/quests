@@ -93,18 +93,11 @@ main {
     border: 2px solid #F52E2E;
 }
 
-/* ESTILIZAÇAO DE CAMPO OBRIGATORIO */
-
-.formulario form input.borda-vermelha{
-    border: 2px solid red;
-}
-
-.formulario form input.borda-vermelha.campo-obrigatorio{
+.formulario .form-control.error span{
     display: block;
-}
-/* ESTILIZAÇAO DE CAMPO PREENCHIDO */
-.formulario form input.campo-preenchido{
-    border: 2px solid lawngreen;
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 /* ESTILIZAÇÃO DE SUCCESS */
