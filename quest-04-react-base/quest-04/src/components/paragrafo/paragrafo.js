@@ -1,9 +1,9 @@
 import React from 'react'
 import './paragrafo.css'
-const Paragrafo = (props, color) =>{
+const Paragrafo = (props) =>{
     return (
         <p 
-        className='paragrafo' style={{color: color}}>{props.texto}</p>
+        className='paragrafo' style={{color: props.color, textTransform: props.maiusculo}}>{props.texto}</p>
     )
 }
 
